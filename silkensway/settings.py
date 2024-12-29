@@ -123,7 +123,7 @@ STATIC_URL = 'static/'
 AWS_ACCESS_KEY_ID = 'T3AXA83HL5A0ZCR6FOTP'
 AWS_SECRET_ACCESS_KEY = 'RTls7T3pPx9f6GVGxZTvQ2iu21otsMcKoSQ5jd5r'
 AWS_STORAGE_BUCKET_NAME = 'project'
-AWS_S3_ENDPOINT_URL = 'project.fsn1.your-objectstorage.com'
+AWS_S3_ENDPOINT_URL = 'https://project.fsn1.your-objectstorage.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
