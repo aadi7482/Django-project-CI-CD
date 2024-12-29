@@ -1,20 +1,20 @@
-# Use an official Python runtime as a parent image
-FROM python:3.11-slim
+FROM python:3.9-slim
 
-# Set the working directory in the container
+# Set work directory
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app/
-
 # Install dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 8000 available to the world outside this container
+# Copy project
+COPY . .
+
+# Collect static files
+RUN python manage.py collectstatic --noinput
+
+# Expose the port
 EXPOSE 8000
 
-# Define environment variable
-ENV PYTHONUNBUFFERED 1
-
-# Run the Django application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Run the Django app
+CMD ["gunicorn", "your_project.wsgi:application", "--bind", "0.0.0.0:8000"]
