@@ -19,4 +19,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
 ]

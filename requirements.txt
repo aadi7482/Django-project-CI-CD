@@ -1,0 +1,14 @@
+asgiref==3.8.1
+backports.zoneinfo==0.2.1
+boto3==1.35.90
+botocore==1.35.90
+Django==4.2.17
+django-storages==1.14.4
+jmespath==1.0.1
+python-dateutil==2.9.0.post0
+s3transfer==0.10.4
+six==1.17.0
+sqlparse==0.5.3
+typing-extensions==4.12.2
+tzdata==2024.2
+urllib3==1.26.20
