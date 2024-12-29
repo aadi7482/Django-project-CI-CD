@@ -127,7 +127,7 @@ AWS_S3_ENDPOINT_URL = 'https://project.fsn1.your-objectstorage.com'
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
-AWS_LOCATION = 'your-spaces-files-folder'
+AWS_LOCATION = ''
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'silkensway/static'),
