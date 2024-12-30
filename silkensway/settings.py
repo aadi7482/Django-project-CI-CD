@@ -120,10 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-AWS_ACCESS_KEY_ID = '9QHDO4KPSTX0UV2MI9EB'
-AWS_SECRET_ACCESS_KEY = 'vVMNO6h3rLoMlsOUdsvb8tB7HiRrhS3QTtc79F7u'
-AWS_STORAGE_BUCKET_NAME = 'django'
-AWS_S3_ENDPOINT_URL = 'https://django.fsn1.your-objectstorage.com'
+AWS_ACCESS_KEY_ID = '
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
